@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-image: url('bg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace;
+}
+
+.container {
+    background-color: rgba(3, 22, 61, 0.9);
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.skills {
+    padding-left: 20px;
+}
+
+header,
+section {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.564);
+    /* Semi-transparent black background */
+    padding: 20px;
+}
+
+.contents {
+    width: 90%;
+    margin: auto;
+    color: white;
+    margin-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #66fcf1;
+}
+
+
+/* Add styles for the projects section */
+.projects {
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+    padding: 20px;
+    margin-top: -345px;
+}
+
+.project-card>h4 {
+    padding-top: 10px;
+}
+
+/* Add styles for project cards */
+.project-card {
+    background-color: rgba(42, 42, 91, 0.266);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    /* Add any other styling you want for your project cards */
+}
+
+.project-site>a {
+    color: #66fcf1;
+    font-size: medium;
+}
+
+.project-source-code>a {
+    color: #66fcf1;
+    font-size: medium;
+}
+
+.project-site>a:hover {
+    color: rgb(225, 190, 51);
+}
+
+.project-source-code>a:hover {
+    color: rgb(51, 225, 51);
+}
+
+.project-description {
+    padding-right: 10px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .contents {
+        margin-top: 10px;
+        padding-right: 0px;
+    }
+
+    header,
+    section {
+        padding-bottom: 20px;
+        padding-left: 5px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .projects {
+        float: none;
+        width: 100%;
+        margin-top: -15px;
+        order: 4;
+        padding-top: 20px;
+        margin-left: -10px;
+    }
+}
